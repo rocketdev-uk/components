@@ -1,0 +1,122 @@
+:root {
+  --text-colour: rgb(255, 255, 255);
+  /* page background color */
+  --background-color: rgb(126, 56, 172);
+  /* this is the rounded rectangle behind each logo */
+  --background-color-accent: rgb(255, 255, 255);
+  --size: clamp(10rem, 1rem + 30vmin, 20rem);
+  --gap: calc(var(--size) / 10);
+  --duration: 50s;
+  --scroll-start: 0;
+  --scroll-end: calc(-100% - var(--gap));
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text-colour: rgb(255, 255, 255);
+    /* page background color */
+    --background-color: rgb(126, 56, 172);
+    /* this is the rounded rectangle behind each logo */
+    --background-color-accent: rgb(255, 255, 255);
+  }
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.wrapper {
+  display: grid;
+  align-content: center;
+  overflow: hidden;
+  gap: var(--gap);
+  width: 100%;
+  min-height: 100vh;
+  color: var(--text-colour);
+  background-color: var(--background-color);
+}
+
+.tickertape {
+  display: flex;
+  overflow: hidden;
+  user-select: none;
+  gap: var(--gap);
+  mask-image: linear-gradient(
+    var(--mask-direction, to right),
+    hsl(0 0% 0% / 0),
+    hsl(0 0% 0% / 1) 20%,
+    hsl(0 0% 0% / 1) 80%,
+    hsl(0 0% 0% / 0)
+  );
+}
+
+.tickertape-group {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: var(--gap);
+  min-width: 100%;
+  animation: scroll-x var(--duration) linear infinite;
+}
+
+.tickertape-reverse .tickertape-group {
+  animation-direction: reverse;
+  animation-delay: -3s;
+}
+
+.tickertape img {
+  display: grid;
+  place-items: center;
+  width: var(--size);
+  /* this is the rounded rectangle behind each logo */
+  background: var(--background-color-accent);
+  aspect-ratio: 16/9;
+  padding: calc(var(--size) / 10);
+  border-radius: 0.5rem;
+}
+
+.tickertape :hover {
+  transform: scale(101%);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap);
+  margin: auto;
+  max-width: 100vw;
+}
+
+@keyframes fade {
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .tickertape-group {
+    animation-play-state: paused;
+  }
+}
+
+@keyframes scroll-x {
+  from {
+    transform: translateX(var(--scroll-start));
+  }
+  to {
+    transform: translateX(var(--scroll-end));
+  }
+}
+
+@keyframes scroll-y {
+  from {
+    transform: translateY(var(--scroll-start));
+  }
+  to {
+    transform: translateY(var(--scroll-end));
+  }
+}
