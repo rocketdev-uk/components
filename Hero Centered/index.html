@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Hero Centered</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="styles.css" />
+  </head>
+  <body>
+    <!--                 Hero Section                   -->
+    <!--                 Hero Section                   -->
+
+    <section id="hero-section">
+      <div class="container">
+        <div class="content">
+          <span class="topper">Topper text goes here</span>
+          <h1 class="title">This is where your title text will go</h1>
+          <p class="text">
+            This is where your description of services, tagline or other
+            description will go.
+          </p>
+          <div class="button-group">
+            <a href="" class="button-solid button1">Read More</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Background Image -->
+      <picture class="background">
+        <source
+          media="(max-width: 600px)"
+          srcset="assets/Images/background.png"
+        />
+        <source
+          media="(min-width: 601px)"
+          srcset="assets/Images/background.png"
+        />
+        <img
+          loading="lazy"
+          decoding="async"
+          src="assets/Images/background.png"
+          alt="field"
+          width="1920"
+          height="1200"
+          aria-hidden="true"
+        />
+      </picture>
+
+      <img
+        class="graphic"
+        src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/white-splatter2.svg"
+        alt="graphic"
+        height="161"
+        width="1920"
+        loading="lazy"
+        decoding="async"
+      />
+    </section>
+  </body>
+  <script src="script.js"></script>
+</html>

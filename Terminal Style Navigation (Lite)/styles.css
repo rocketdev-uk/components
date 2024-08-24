@@ -1,0 +1,111 @@
+:root {
+  --primary: #000000;
+  --secondary: #ff0000;
+
+  /* navigation */
+  --nav-links-font: 'Century Gothic';
+  --nav-links-text: #ffffff;
+  --nav-links-hover: #e5ff00;
+}
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--nav-links-font)
+}
+
+  /* navigation */
+.navigation {
+  display: flex;
+  padding: 10px;
+  margin: 10px;
+  border-radius:10px;
+  background-color: var(--primary);
+  vertical-align: middle;
+}
+.logo {
+width: 20%;
+}
+.title {
+  position: fixed;
+  top: 26px;
+  left:57px;
+  color: var(--nav-links-text);
+  font-weight: bold;
+  }
+.links {
+  display: flex;
+  position: absolute;
+  right:0;
+  margin-right:20px;
+  height:40px;
+}
+.links img {
+  margin-top:-7px;
+  width:30px;
+  height:30px;
+}
+.links a {
+text-decoration: none;
+padding:10px;
+color: var(--nav-links-text);
+font-family: var(--nav-links-font)
+}
+.links a:hover {
+  color: var(--nav-links-hover);
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  padding-bottom: -50px;
+  }
+  .links a:hover + .links-tooltip-home {
+    display: block;  
+    }
+    .links a:hover + .links-tooltip-about {
+      display: block;  
+      }
+      .links a:hover + .links-tooltip-services {
+        display: block;  
+        }
+        .links a:hover + .links-tooltip-contact {
+          display: block;  
+          }
+.links-tooltip-home {
+  display: none;
+  position:fixed;
+  top: 26px;
+  left: 110px;
+  color:var(--nav-links-text);
+  font-family: var(--nav-links-font);
+}
+.links-tooltip-about {
+  display: none;
+  position:fixed;
+  top: 26px;
+  left: 110px;
+  color:var(--nav-links-text);
+  font-family: var(--nav-links-font);
+}
+.links-tooltip-services {
+  display: none;
+  position:fixed;
+  top: 26px;
+  left: 110px;
+  color:var(--nav-links-text);
+  font-family: var(--nav-links-font);
+}
+.links-tooltip-contact {
+  display: none;
+  position:fixed;
+  top: 26px;
+  left: 110px;
+  color:var(--nav-links-text);
+  font-family: var(--nav-links-font);
+}
+
+@media only screen and (max-width: 450px) {
+
+  [class*="links"] {
+    display:none;
+  }
+
+}

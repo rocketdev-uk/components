@@ -1,0 +1,113 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Hero With Service Cards</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="styles.css" />
+  </head>
+  <body>
+    <!-- ============================================ -->
+    <!--                    Hero                      -->
+    <!-- ============================================ -->
+
+    <section id="hero-section">
+      <div class="container">
+        <div class="content">
+          <span class="topper"> Topper text goes here </span>
+          <h1 class="title">Your title for this section should go here</h1>
+          <a href="" class="button-solid">Button text</a>
+        </div>
+        <ul class="card-group">
+          <li class="item">
+            <img
+              class="icon"
+              loading="lazy"
+              decoding="async"
+              src="assets/Images/1.svg"
+              alt="icon"
+              width="48"
+              height="48"
+            />
+            <h3 class="h3">Service 1</h3>
+            <p class="item-text">
+              Your service description should go here. Obviously this section
+              can be repurposed for something other than services...
+            </p>
+          </li>
+          <li class="item">
+            <img
+              class="icon"
+              loading="lazy"
+              decoding="async"
+              src="assets/Images/2.svg"
+              alt="icon"
+              width="48"
+              height="48"
+            />
+            <h3 class="h3">Service 2</h3>
+            <p class="item-text">
+              Your service description should go here. Obviously this section
+              can be repurposed for something other than services...
+            </p>
+          </li>
+          <li class="item">
+            <img
+              class="icon"
+              loading="lazy"
+              decoding="async"
+              src="assets/Images/3.svg"
+              alt="icon"
+              width="48"
+              height="48"
+            />
+            <h3 class="h3">Service 3</h3>
+            <p class="item-text">
+              Your service description should go here. Obviously this section
+              can be repurposed for something other than services...
+            </p>
+          </li>
+          <li class="item">
+            <img
+              class="icon"
+              loading="lazy"
+              decoding="async"
+              src="assets/Images/4.svg"
+              alt="icon"
+              width="48"
+              height="48"
+            />
+            <h3 class="h3">Service 4</h3>
+            <p class="item-text">
+              Your service description should go here. Obviously this section
+              can be repurposed for something other than services...
+            </p>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Background Image, there's a background image in the CSS for the parallax effect you'll need to change as well if you swap out these images -->
+      <picture class="background">
+        <source
+          media="(max-width: 600px)"
+          srcset="assets/Images/background.png"
+        />
+        <source
+          media="(min-width: 601px)"
+          srcset="assets/Images/background.png"
+        />
+        <img
+          loading="async"
+          decoding="async"
+          src="assets/Images/background.png"
+          alt="field"
+          width="1920"
+          height="1200"
+          aria-hidden="true"
+        />
+      </picture>
+    </section>
+  </body>
+  <script src="script.js"></script>
+</html>
