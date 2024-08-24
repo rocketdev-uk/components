@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Landing Page Centered</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="styles.css" />
+  </head>
+  <body>
+    <!--                 Hero Section                   -->
+    <!--                 Hero Section                   -->
+
+    <section id="hero-section">
+      <div class="container">
+        <div class="flex-group">
+          <span class="topper">this is where your topper text will go</span>
+          <h1 class="title">This is where your title text will go</h1>
+          <p class="text">
+            This is where your description of services, tagline or other
+            description will go. <br /><br />
+            All of this content you see will float and scroll above the
+            background image.
+          </p>
+          <a href="" class="button-solid">Solid Button</a>
+          <a href="" class="button-transparent"> Transparent Button </a>
+        </div>
+      </div>
+
+      <!-- Background Image -->
+      <picture class="picture">
+        <source
+          media="(max-width: 600px)"
+          srcset="Assets/Images/background.png"
+        />
+        <source
+          media="(min-width: 601px)"
+          srcset="Assets/Images/background.png"
+        />
+        <img
+          loading="lazy"
+          decoding="async"
+          src="Assets/Images/background.png"
+          alt="mountains"
+          width="2250"
+          height="1500"
+          aria-hidden="true"
+        />
+      </picture>
+    </section>
+  </body>
+  <script src="script.js"></script>
+</html>

@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Standard (with mobile dropdown)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="styles.css" />
+  </head>
+  <body>
+    <!--                 Navigation Section                   -->
+    <!--                 Navigation Section                   -->
+
+    <header id="navigation">
+      <div class="container">
+        <!--Nav Logo-->
+        <a href="" class="logo" aria-label="back to home">
+          <img
+            src="assets/images/logotype.png"
+            alt="logo"
+            width="210"
+            height="29"
+            aria-hidden="true"
+            decoding="async"
+          />
+        </a>
+        <!--Navigation List-->
+        <nav class="nav" role="navigation">
+          <!--Mobile Nav Toggle-->
+          <button class="toggle" aria-label="mobile menu toggle">
+            <div class="box" aria-hidden="true">
+              <span class="line line1" aria-hidden="true"></span>
+              <span class="line line2" aria-hidden="true"></span>
+              <span class="line line3" aria-hidden="true"></span>
+            </div>
+          </button>
+          <!-- wrapper div so we can set a fixed height on the ul in case the nav list gets too long from too many dropdowns being opened and needs to have an overflow scroll. This wrapper acts as the background so it can go the full height of the screen and not cut off any overflowing nav items while the ul stops short of the bottom of the screen, which keeps all nav items in view no matter how mnay there are-->
+          <div class="ul-wrapper">
+            <ul id="expanded" class="ul" aria-expanded="false">
+              <li class="li">
+                <a href="" class="li-link active"> home </a>
+              </li>
+              <li class="li">
+                <a href="" class="li-link"> our story </a>
+              </li>
+              <li class="li">
+                <a href="" class="li-link"> what we can do for you </a>
+              </li>
+              <li class="li">
+                <a href="" class="li-link"> faq's </a>
+              </li>
+              <li class="li">
+                <a href="" class="li-link"> login </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <a href="" class="button-solid nav-button">get in touch</a>
+      </div>
+    </header>
+  </body>
+  <script src="script.js"></script>
+</html>
