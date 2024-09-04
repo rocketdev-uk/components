@@ -6,6 +6,9 @@
 }
 
 body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Full viewport height */
     background: url('assets/images/Hero-Back-Starry.gif') no-repeat center center fixed;
     background-size: cover;
     background-attachment: fixed;
@@ -55,17 +58,36 @@ body {
     font-size: 12px;
 }
 
+.main-content {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
 .section {
+    display: flex;
+    flex: 1; /* Makes each section take equal height */
+    flex-direction: column;
+    justify-content: flex-start; /* Align items to the top */
     padding: 20px;
+    margin: 10px 10px; /* Creates a 50px gap on the left and right sides */
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 8px;
-    margin: 10px;
+    position: relative; /* Ensure that titles stay in place */
+}
+
+.section-content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: center; /* Center the grid vertically within its space */
 }
 
 .section-title {
     font-size: 20px;
     margin-bottom: 10px;
     color: #ffffff;
+    text-align: left;
 }
 
 .icon-grid {
@@ -84,12 +106,13 @@ body {
     text-decoration: none;
     border-radius: 10px;
     padding: 10px;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, transform 0.3s;
 }
 
 .icon:hover {
     background-color: rgba(255, 255, 255, 0.2);
     color: rgb(0, 174, 255);
+    transform: scale(1.1);
 }
 
 .icon-image {
