@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: century-gothic, sans-serif;
+}
+
+body {
+    background: url('assets/images/hero-back.jpg') no-repeat center center fixed;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    overflow-x: hidden;
+    color: #ffffff;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+}
+
+.logo-title {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.page-title {
+    font-size: 24px;
+    letter-spacing: 1px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.user-info {
+    text-align: right;
+}
+
+.user-name {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.user-email {
+    display: block;
+    font-size: 12px;
+}
+
+.section {
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    margin: 10px;
+}
+
+.section-title {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.icon-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 15px;
+}
+
+.icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 10px;
+    transition: background-color 0.3s;
+}
+
+.icon:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: rgb(0, 174, 255);
+}
+
+.icon-image {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 10px;
+}
+
+.icon-text {
+    font-size: 16px;
+    text-align: center;
+}
+
+/* Mobile resolution - adjust to 4 rows */
+@media (max-width: 768px) {
+    .icon-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
