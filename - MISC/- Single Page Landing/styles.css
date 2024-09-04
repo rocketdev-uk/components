@@ -8,7 +8,7 @@
 body {
     display: flex;
     flex-direction: column;
-    height: 100vh; /* Full viewport height */
+    height: 100vh; 
     background: url('assets/images/Hero-Back-Starry.gif') no-repeat center center fixed;
     background-size: cover;
     background-attachment: fixed;
@@ -66,21 +66,21 @@ body {
 
 .section {
     display: flex;
-    flex: 1; /* Makes each section take equal height */
+    flex: 1;
     flex-direction: column;
-    justify-content: flex-start; /* Align items to the top */
+    justify-content: flex-start; 
     padding: 20px;
-    margin: 10px 10px; /* Creates a 50px gap on the left and right sides */
+    margin: 10px 10px; 
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 8px;
-    position: relative; /* Ensure that titles stay in place */
+    position: relative; 
 }
 
 .section-content {
     display: flex;
     flex-direction: column;
     flex: 1;
-    justify-content: center; /* Center the grid vertically within its space */
+    justify-content: center; 
 }
 
 .section-title {
