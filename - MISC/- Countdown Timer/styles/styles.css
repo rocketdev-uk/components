@@ -1,0 +1,43 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #111;
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+.countdown {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: #fff;
+  font-size: 2rem;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.countdown div {
+  background: #222;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.5);
+  transition: background 0.3s ease-in-out;
+}
+
+.countdown div:hover {
+  background: #333;
+}
+
+.label {
+  display: block;
+  font-size: 1rem;
+  margin-top: 5px;
+  color: #ddd;
+}
+
+.digit {
+  font-size: 3rem;
+  font-weight: bold;
+}
